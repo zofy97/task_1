@@ -7,17 +7,28 @@ package aufgabe_1;
 
 /**
  *
- * @author s0559289
+ * @author FIni
  */
-public class Verlag {
-    public enum Verlaege    {
-        Cornelsen, Carlsen, Springer, Langenscheidt, Taz;
-        private final String name;  
-        Verlaege(String verlagName) {
-            name = verlagName;
-        }
-        public String getVerlagName()   {
-            return name;
-        }
+public enum Verlag {
+    VERLAG_1("Cornelsen"),
+    VERLAG_2("Carlsen"),
+    VERLAG_3("Springer"),
+    VERLAG_4("Langenscheidt"),
+    VERLAG_5("Fischer");
+    private final String name;
+
+    Verlag(String verlagName) {
+        name = verlagName;
     }
+
+    public String getVerlagName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+    
+    
 }

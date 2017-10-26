@@ -10,7 +10,7 @@ package aufgabe_1;
  * @author s0559289
  */
 public class Buch implements BuchSchnittstelle  {
-    int id;
+    String id;
     String autor;
     String titel;
     String isbn;
@@ -21,7 +21,7 @@ public class Buch implements BuchSchnittstelle  {
         //Default-Constructor
     }
     
-    public Buch(int id, String autor, String titel, String isbn, Verlag verlag , int jahr)   {
+    public Buch(String id, String autor, String titel, String isbn, Verlag verlag , int jahr)   {
         this.id = id;
         this.autor = autor;
         this.titel = titel;
@@ -30,11 +30,11 @@ public class Buch implements BuchSchnittstelle  {
         this.jahr = jahr;
     }
     
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -70,10 +70,10 @@ public class Buch implements BuchSchnittstelle  {
         this.verlag = verlag;
     }
 
-    public int getJahr() {
+    public int getJahr(){
         return jahr;
     }
-
+    
     public void setJahr(int jahr) {
         this.jahr = jahr;
     }

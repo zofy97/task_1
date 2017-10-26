@@ -10,8 +10,8 @@ package aufgabe_1;
  * @author s0559289
  */
 public interface BuchSchnittstelle {
-    public int getId();
-    public void setId(int id);
+    public String getId();
+    public void setId(String id);
     public String getAutor();
     public void setAutor(String autor);
     public String getTitel();
@@ -22,4 +22,5 @@ public interface BuchSchnittstelle {
     public void setVerlag(Verlag verlag);
     public int getJahr();
     public void setJahr(int jahr);
+    
 }
